@@ -1,0 +1,569 @@
+// Sections
+
+/*Homepage*/
+h1, h2, h3, h4, .home .red-bk-msg, .home .white-msg, .cc-lookup form .black {
+	font-weight: 900;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+.home {
+	background-image: url('/img/photos/desktop/home.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
+
+	.red-bk-msg {
+		@include fontSize(40px);
+		background-color: $tomato-color;
+		color: $white-color;
+		padding: 30px 80px;
+		position: absolute;
+		left: 0;
+		top: 18%;
+	}
+
+	.white-msg {
+		@include fontSize(86px);
+		background-color: transparent;
+		bottom: 25%;
+		color: $white-color;
+		position: absolute;
+		text-align: center;
+		text-shadow: 0px 0px 15px $darkslategray-color;
+	}
+}
+
+.home-information h2, .home-information h3, .home-information h4 {
+	@include fontSize(42px);
+}
+
+.home-information {
+	.info-container {
+		margin-top: -155px;
+	}
+
+	p {
+		@include fontSize(20px);
+		color: $darkslategray-color;
+		font-weight: 300;
+	}
+}
+
+.red-btn, .inverse-btn {
+	@include transition(all, 0.5s, ease-out, 0s);
+	@include fontSize(21px);
+	border: 2px solid $tomato-color;
+	font-weight: 300;
+}
+
+.red-btn {
+	background-color: $tomato-color;
+	color: $white-color;
+
+	&:hover {
+		background-color: $white-color;
+		color: $tomato-color;
+	}
+}
+
+.inverse-btn {
+	background-color: $white-color;
+	color: $tomato-color;
+
+	&:hover {
+		background-color: $tomato-color;
+		color: $white-color;
+	}
+}
+
+.big-btn {
+	@include fontSize(45px);
+	padding: 20px 40px 20px 80px;
+}
+
+.phone-btn, .email-btn {
+	@include transition(all, 0.5s, ease-out, 0s);
+	background-image: url('/img/icons/email-btn-icon.png');
+	background-size: initial;
+	background-repeat: no-repeat;
+	background-position: 20px 50%;
+
+	&:hover {
+		background-color: $tomato-color;
+		background-image: url('/img/icons/email-btn-hover.png');
+		color: $white-color;
+	}
+}
+
+.phone-btn {
+	background-image: url('/img/icons/phone-btn-icon.png');
+
+	&:hover {
+		background-color: $white-color;
+		background-image: url('/img/icons/phone-btn-hover.png');
+		color: $tomato-color;
+	}
+}
+
+/*Forms*/
+.lookup-form, .cancel-form, .acc-form, .cc-lookup-form {
+	.form-control, .form-control[readonly] {
+		@include borderRadius(0px);
+		border: none;
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	input[type="submit"] {
+		width: 100%;
+	}
+}
+
+/*Credit Card Lookup*/
+.cc-lookup {
+	border: 3px solid $tomato-color;
+	padding: 40px 50px 60px 50px;
+}
+
+.cc-lookup h3 + span {
+	@include fontSize(30px);
+	font-weight: 300;
+	padding: 10px 0 30px 0;
+}
+
+.cc-lookup label {
+	@include fontSize(29px);
+	color: $dimgray-color;
+	font-weight: 400;
+}
+
+.cc-lookup-form .black, .cc-lookup .static, .cc-lookup input[type="text"] {
+	@include fontSize(31px);
+}
+
+.cc-lookup input[type="submit"] {
+	@include fontSize(33px);
+	margin: 0 auto;
+}
+
+.cc-lookup .static {
+	font-weight: 300;
+	padding: 0 50px 0 30px;
+}
+
+.cc-lookup input[type="text"] {
+	border: 1px solid $tomato-color;
+	font-weight: 300;
+	height: 50px;
+	letter-spacing: 4px;
+	padding: 5px 15px;
+	width: 180px;
+}
+
+/*Cancel Subscription*/
+.lookup-form, .cancel-form {
+	.input-group {
+		@include borderRadius(0px);
+		border: 1px solid $tomato-color;
+	}
+
+	.input-group .form-control {
+		@include fontSize(20px);
+		padding: 1rem 2.0625rem;
+	}
+
+	input[type="submit"], .inverse-btn {
+		@include fontSize(25px);
+
+		&:hover {
+			cursor: pointer;			
+		}
+	}
+
+	.inverse-btn {
+		padding: 0.75em 0;
+	}
+
+	.suggestion {
+		@include fontSize(18px);
+		color: $tomato-color;
+	}
+
+	.input-group-text {
+		background-color: $white-color;
+		border: none;
+		border-left: 1px solid $lightgray-color;
+		padding-bottom: 0;
+		padding-top: 0;
+		margin-bottom: 0.75rem;
+		margin-top: 0.75rem;
+	}
+
+	.input-group .form-control,
+	.input-group .form-control::-webkit-input-placeholder, 
+	.input-group .form-control::-moz-placeholder,
+	.input-group .form-control:-ms-input-placeholder,
+	.input-group .form-control:-moz-placeholder {
+	 	color: $darkgray-color;
+	}
+
+	.input-group .input-group-text {
+		padding: 0.375rem 1.75rem;
+	}
+
+	 .input-group .input-group-prepend {
+		border: none;
+		border-right: 1px solid $tomato-color;
+	}
+}
+
+.notification {
+	@include fontSize(27px);
+	color: $tomato-color;
+}
+
+/*Confirmation*/
+.confirmation-form {
+	@include fontSize(31px);
+	color: $tomato-color;
+	font-weight: 300;
+
+	input[type="submit"] {
+		@include fontSize(23px);
+		width: 100%;
+	}
+}
+
+.shadow {
+	@include boxShadow(0px, 0px, 6px, 0px, $lightgray-color);	
+}
+
+/*Accordion*/
+.accordion .card-header {
+	@include borderRadius(15px);
+	background-color: $whitesmoke-color;
+	border-bottom: none;
+	padding: 0.375rem 1.25rem;
+
+	a {
+		@include fontSize(17px);
+		color: $darkgray-color;
+		display: block;
+		font-weight: 800;
+		padding: 0.375rem -0px;
+	}
+}
+
+/*Refund*/
+.refund h1 {
+	@include fontSize(40px);
+}
+
+.refund-information p {
+	@include fontSize(22px);
+}
+
+/*Account Form*/
+.acc-form {
+	.form-control, .form-control[readonly] {		
+		@include fontSize(21px);
+		background-color: $white-color;
+		border-bottom: 1px solid $tomato-color;
+	}
+}
+
+/*Accordion*/
+.item-btn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	float: right;
+	padding-top: 3px;
+	position: relative;
+
+	&:focus {
+		outline: none;
+	}
+
+	.plus, .minus {
+		@include transition(all, 0.3s, ease-out, 0.1s);		
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: $darkgray-color;
+		display: block;
+		position: absolute;
+		right: 0;
+		height: 16px;
+		width: 16px;
+	}
+
+	.plus {
+		background: url('/img/icons/sprite.png');
+		background-position: 0 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+
+	.minus {
+		background: url('/img/icons/sprite.png');
+		background-position: -22px 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: 0;
+		transform: rotate(-90deg);
+	}
+}
+
+.active {
+	.plus {
+		background: url('/img/icons/sprite.png');
+		background-position: 0 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: 0;
+		transform: rotate(90deg);
+	}
+
+	.minus {
+		background: url('/img/icons/sprite.png');
+		background-position: -22px 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+}
+
+@media screen and (max-width: $sm-desktop-breakpoint) {
+	.cc-lookup input[type="text"] {
+		width: 160px;
+	}
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+	body{
+		margin-top: 56px;
+	}
+
+	.home {
+		background-image: url('/img/photos/tablet/home.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		.red-bk-msg {
+			@include fontSize(42px);
+			padding: 20px 80px;
+		}
+
+		.white-msg {
+			@include fontSize(65px);
+			bottom: 35%;
+			line-height: 65px;
+			position: absolute;
+		}
+	}
+
+	.home-information h2, .home-information h3, .home-information h4 {
+		@include fontSize(36px);
+	}
+
+	.home-information {
+		.info-container {
+			margin-top: -210px;
+		}
+
+		p {
+			@include fontSize(18px);
+		}
+	}
+
+	.cc-lookup label {
+		@include fontSize(26px);
+	}
+
+	.cc-lookup .static {
+		padding: 0;
+	}
+
+	.cc-lookup h3 + span {
+		padding: 10px 0 20px 0;
+	}
+
+	.big-btn {
+		@include fontSize(38px);
+		padding: 20px 40px 20px 80px;
+	}
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+	.home {
+		background-image: url('/img/photos/mobile/home.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 70vh;
+
+		.red-bk-msg {
+			@include fontSize(26px);
+			padding: 10px 0;
+		} 
+
+		.white-msg {
+			@include fontSize(36px);		
+			bottom: 38%;
+			line-height: 40px;
+		}
+	}
+
+	.home-information {
+		h2 {
+			@include fontSize(32px);
+		}
+
+		h4 {
+			@include fontSize(25px);
+		}
+
+		p {
+			@include fontSize(14px);
+		}
+
+		.info-container {
+			margin-top: -186px;
+		}
+	}
+
+	.big-btn {
+		@include fontSize(22px);
+		padding: 15px 10px 15px 60px;
+	}
+
+	.phone-btn, .email-btn {
+		@include transition(all, 0.5s, ease-out, 0s);
+		background-size: initial;
+		background-repeat: no-repeat;
+		background-position: 6px 50%;
+		display: block;
+	}
+
+	.title h1 {
+		@include fontSize(26px);
+	}
+	
+	/*Credit Card Lookup*/
+	.cc-lookup {
+		padding: 45px 20px;
+
+		h3 {
+			@include fontSize(30px);
+		}
+
+		h3 + span {
+			@include fontSize(18px);
+			padding: 10px 0 15px 0;
+		}
+
+		label > img {
+			display: none;
+		}
+
+		label {
+			@include fontSize(14px);
+		}
+	}
+
+	.cc-lookup-form {
+		.black {
+			@include fontSize(20px);
+		}
+
+		.static, input[type="text"] {
+			@include fontSize(16px);	
+		}
+
+		.static {
+			padding: 0 5px 0 5px;
+		}
+
+		input[type="text"] {
+			padding: 5px 8px;
+			width: 90px;
+		}
+	}
+
+	.lookup-form, .cancel-form {
+		.input-group .form-control {
+			@include fontSize(14px);
+			padding: 0.75rem;
+		}
+
+		input[type="submit"], .inverse-btn {
+			@include fontSize(18px);
+		}
+
+		.input-group .input-group-text {
+			padding: 0.375rem 0.75rem;
+		}
+	}
+
+	.refund-information p {
+		@include fontSize(18px);
+	}
+
+	.confirmation-form {
+		@include fontSize(20px);
+
+		input[type="submit"] {
+			@include fontSize(18px);
+		}
+	}
+
+	.acc-form {
+		.form-control, .form-control[readonly] {		
+			@include fontSize(14px);
+		}
+	}
+
+	.item-btn {
+		padding-top: 3px;
+	}
+
+	.accordion .card-header a {
+		@include fontSize(16px);
+	}
+}
+
+@media screen and (max-width: $extra-sm-mobile-breakpoint) {
+	.home {
+		.red-bk-msg {
+			@include fontSize(24px);
+			padding: 10px 0;
+		} 
+
+		.white-msg {
+			@include fontSize(28px);		
+			bottom: 40%;
+			line-height: 30px;
+		}
+	}
+
+	.home-information {
+		.info-container {
+			margin-top: -170px;
+		}
+	}
+
+	.big-btn {
+		@include fontSize(18px);
+		padding: 15px 10px 15px 60px;
+	}
+}

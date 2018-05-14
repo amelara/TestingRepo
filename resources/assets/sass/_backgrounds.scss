@@ -1,0 +1,306 @@
+/*********************************************************************************************************************
+*** Home
+**********************************************************************************************************************/
+.home-item-1 {
+    content: url("/img/photos/desktop/home-item-1.jpg");
+}
+
+.home-item-2 {
+    content: url("/img/photos/desktop/home-item-2.png");
+}
+
+.home-item-3 {
+    content: url("/img/photos/desktop/home-item-3.png");
+}
+
+.home-item-4 {
+    content: url("/img/photos/desktop/home-item-4.png");
+}
+
+/*********************************************************************************************************************
+*** Terms
+**********************************************************************************************************************/
+.terms-intro {
+    content: url("/img/text/desktop/terms/intro.png");
+}
+
+.terms-item-1 {
+    content: url("/img/text/desktop/terms/binding-agreement.png");
+}
+
+.terms-item-2 {
+    content: url("/img/text/desktop/terms/amendments-and-modifications.png");
+}
+
+.terms-item-3 {
+    content: url("/img/text/desktop/terms/no-underage-use.png");
+}
+
+.terms-item-4 {
+    content: url("/img/text/desktop/terms/intellectual-property.png");
+}
+
+.terms-item-5 {
+    content: url("/img/text/desktop/terms/membership.png");
+}
+
+.terms-item-6 {
+    content: url("/img/text/desktop/terms/usage-guidelines.png");
+}
+
+.terms-item-7 {
+    content: url("/img/text/desktop/terms/assumption-of-risks.png");
+}
+
+.terms-item-8 {
+    content: url("/img/text/desktop/terms/dispute-resolution.png");
+}
+
+.terms-item-9 {
+    content: url("/img/text/desktop/terms/limitation-of-liability.png");
+}
+
+.terms-item-10 {
+    content: url("/img/text/desktop/terms/indemnification.png");
+}
+
+.terms-item-11 {
+    content: url("/img/text/desktop/terms/miscellaneous.png");
+}
+
+/*********************************************************************************************************************
+*** Privacy
+**********************************************************************************************************************/
+.privacy-intro {
+    content: url("/img/text/desktop/privacy/intro.png");
+}
+
+.privacy-item-1 {
+    content: url("/img/text/desktop/privacy/revision.png");
+}
+
+.privacy-item-2 {
+    content: url("/img/text/desktop/privacy/information-collected.png");
+}
+
+.privacy-item-3 {
+    content: url("/img/text/desktop/privacy/use-of-collected-info.png");
+}
+
+.privacy-item-4 {
+    content: url("/img/text/desktop/privacy/security.png");
+}
+
+.privacy-item-5 {
+    content: url("/img/text/desktop/privacy/emails.png");
+}
+
+.privacy-item-6 {
+    content: url("/img/text/desktop/privacy/posted-info.png");
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+/*********************************************************************************************************************
+*** Home
+**********************************************************************************************************************/
+    .home-item-1 {
+        content: url("/img/photos/tablet/home-item-1.png");
+    }
+
+    .home-item-2 {
+        content: url("/img/photos/tablet/home-item-2.png");
+    }
+
+    .home-item-3 {
+        content: url("/img/photos/tablet/home-item-3.png");
+    }
+
+    .home-item-4 {
+        content: url("/img/photos/tablet/home-item-4.png");
+    }
+
+/*********************************************************************************************************************
+*** Terms
+**********************************************************************************************************************/
+    .terms-intro {
+        content: url("/img/text/tablet/terms/intro.png");
+    }
+
+    .terms-item-1 {
+        content: url("/img/text/tablet/terms/binding-agreement.png");
+    }
+
+    .terms-item-2 {
+        content: url("/img/text/tablet/terms/amendments-and-modifications.png");
+    }
+
+    .terms-item-3 {
+        content: url("/img/text/tablet/terms/no-underage-use.png");
+    }
+
+    .terms-item-4 {
+        content: url("/img/text/tablet/terms/intellectual-property.png");
+    }
+
+    .terms-item-5 {
+        content: url("/img/text/tablet/terms/membership.png");
+    }
+
+    .terms-item-6 {
+        content: url("/img/text/tablet/terms/usage-guidelines.png");
+    }
+
+    .terms-item-7 {
+        content: url("/img/text/tablet/terms/assumption-of-risks.png");
+    }
+
+    .terms-item-8 {
+        content: url("/img/text/tablet/terms/dispute-resolution.png");
+    }
+
+    .terms-item-9 {
+        content: url("/img/text/tablet/terms/limitation-of-liability.png");
+    }
+
+    .terms-item-10 {
+        content: url("/img/text/tablet/terms/indemnification.png");
+    }
+
+    .terms-item-11 {
+        content: url("/img/text/tablet/terms/miscellaneous.png");
+    }
+
+/*********************************************************************************************************************
+*** Privacy
+**********************************************************************************************************************/
+    .privacy-intro {
+        content: url("/img/text/tablet/privacy/intro.png");
+    }
+
+    .privacy-item-1 {
+        content: url("/img/text/tablet/privacy/revision.png");
+    }
+
+    .privacy-item-2 {
+        content: url("/img/text/tablet/privacy/information-collected.png");
+    }
+
+    .privacy-item-3 {
+        content: url("/img/text/tablet/privacy/use-of-collected-info.png");
+    }
+
+    .privacy-item-4 {
+        content: url("/img/text/tablet/privacy/security.png");
+    }
+
+    .privacy-item-5 {
+        content: url("/img/text/tablet/privacy/emails.png");
+    }
+
+    .privacy-item-6 {
+        content: url("/img/text/tablet/privacy/posted-info.png");
+    }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+/*********************************************************************************************************************
+*** Home
+**********************************************************************************************************************/
+    .home-item-1 {
+        content: url("/img/photos/mobile/home-item-1.png");
+    }
+
+    .home-item-2 {
+        content: url("/img/photos/mobile/home-item-2.png");
+    }
+
+    .home-item-3 {
+        content: url("/img/photos/mobile/home-item-3.png");
+    }
+
+    .home-item-4 {
+        content: url("/img/photos/mobile/home-item-4.png");
+    }
+
+/*********************************************************************************************************************
+*** Terms
+**********************************************************************************************************************/
+    .terms-intro {
+        content: url("/img/text/mobile/terms/intro.png");
+    }
+
+    .terms-item-1 {
+        content: url("/img/text/mobile/terms/binding-agreement.png");
+    }
+
+    .terms-item-2 {
+        content: url("/img/text/mobile/terms/amendments-and-modifications.png");
+    }
+
+    .terms-item-3 {
+        content: url("/img/text/mobile/terms/no-underage-use.png");
+    }
+
+    .terms-item-4 {
+        content: url("/img/text/mobile/terms/intellectual-property.png");
+    }
+
+    .terms-item-5 {
+        content: url("/img/text/mobile/terms/membership.png");
+    }
+
+    .terms-item-6 {
+        content: url("/img/text/mobile/terms/usage-guidelines.png");
+    }
+
+    .terms-item-7 {
+        content: url("/img/text/mobile/terms/assumption-of-risks.png");
+    }
+
+    .terms-item-8 {
+        content: url("/img/text/mobile/terms/dispute-resolution.png");
+    }
+
+    .terms-item-9 {
+        content: url("/img/text/mobile/terms/limitation-of-liability.png");
+    }
+
+    .terms-item-10 {
+        content: url("/img/text/mobile/terms/indemnification.png");
+    }
+
+    .terms-item-11 {
+        content: url("/img/text/mobile/terms/miscellaneous.png");
+    }
+
+/*********************************************************************************************************************
+*** Privacy
+**********************************************************************************************************************/
+    .privacy-intro {
+        content: url("/img/text/mobile/privacy/intro.png");
+    }
+
+    .privacy-item-1 {
+        content: url("/img/text/mobile/privacy/revision.png");
+    }
+
+    .privacy-item-2 {
+        content: url("/img/text/mobile/privacy/information-collected.png");
+    }
+
+    .privacy-item-3 {
+        content: url("/img/text/mobile/privacy/use-of-collected-info.png");
+    }
+
+    .privacy-item-4 {
+        content: url("/img/text/mobile/privacy/security.png");
+    }
+
+    .privacy-item-5 {
+        content: url("/img/text/mobile/privacy/emails.png");
+    }
+
+    .privacy-item-6 {
+        content: url("/img/text/mobile/privacy/posted-info.png");
+    }
+}

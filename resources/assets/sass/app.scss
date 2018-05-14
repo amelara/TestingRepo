@@ -1,0 +1,41 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+// Bootstrap v4
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/*!
+ * CCPAY4 Support Site 
+ * Developer: Franco Salas
+ * Designer: Pedro Cuadra
+ */
+
+// Variables
+@import "variables";
+
+// Mixins
+@import "mixins";
+
+// Colors
+@import "colors";
+
+// Dependencies
+@import "dependencies";
+
+// Helpers
+@import "helpers";
+
+// Navbar
+@import "navbar";
+
+// Elements
+@import "elements";
+
+// Sections
+@import "sections";
+
+// Loader
+@import "loader";
+
+// Information
+@import "backgrounds";

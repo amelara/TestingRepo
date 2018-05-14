@@ -1,0 +1,71 @@
+// Elements
+
+/*Header*/
+header .navbar {
+	background-color: $white-color;
+	border-bottom: 0.5px solid $gainsboro-color;
+}
+
+header .navbar .nav-link {
+	@include fontSize(16px);
+	@include transition(all, 0.5s, ease-out, 0s); 
+	color: $tomato-color;
+	font-weight: 900;
+	position: relative;
+
+	&:hover {
+		color: $dimgray-color;
+	}
+}
+
+header .navbar .nav-link, header .navbar .nav-link:before, header .navbar .nav-link:after {
+	@include transition(all, 0.5s, ease-out, 0s); 
+}
+
+header .navbar .nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: $dimgray-color;
+  height: 1px;
+}
+
+header .navbar .nav-link:hover:after {
+  width: 100%;
+}
+
+/*Footer*/
+footer {
+	background-color: $gainsboro-color;
+}
+
+footer span, footer span > a {
+	@include fontSize(15px);
+	@include transition(all, 0.3s, ease-out, 0s);
+	color: $black-color;
+}
+
+footer span > a {
+	&:hover {
+		color: $tomato-color;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+	footer span, footer span > a {
+		@include fontSize(14px);
+	}
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+	.logo {
+		display: block;
+		text-align: center;
+	}
+}

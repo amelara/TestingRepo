@@ -1,0 +1,219 @@
+// Navbar
+.menu-icon {
+    &:focus {
+        outline: none;
+    }
+}
+
+nav {
+    display: none;
+}
+
+/* overlay layer */
+.ssm-overlay {
+    background-color: rgba(0,0,0,0.2);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* prevent scroll when nav is open */
+.is-navOpen{
+    overflow: hidden;
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+    .navbar-brand img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+    nav {
+        /*display: block;*/
+        padding: 0 20px;
+    }
+
+    .navbar-brand img {
+        width: auto;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .close-menu, .slideout-menu a {
+        color: $white-color;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .close-menu {
+        background: $tomato-color;  
+        padding: 20px 40px;
+    }
+
+    .slideout-menu {
+        background-color: $tomato-color;  
+        bottom: 0;
+        display: none;
+        min-height: 100vh;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+
+        a {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+            font-size: 17px;
+            padding: 25px 20px 15px 20px;
+        }
+
+        a:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        will-change: transform;
+        background-color: $white-color; /* A background-color is required */
+        min-height: 100vh;
+    }
+
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .nav-icon {
+        height: 18px;
+        width: 32px;
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+    .home-icon {
+        background: url(/img/icons/menu-sprite.png) 0 2px;
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+
+    .lookup-icon {
+        background: url(/img/icons/menu-sprite.png) 0 -53px;
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+
+    .cancel-icon {
+        background: url(/img/icons/menu-sprite.png) 0 -117px;
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+
+    .cclookup-icon {
+        background: url(/img/icons/menu-sprite.png) 0 -182px;
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+
+    .terms-icon {
+        background: url(/img/icons/menu-sprite.png) 0 -250px;
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+
+    .privacy-icon {
+        background: url(/img/icons/menu-sprite.png) 0 -311px;
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+
+    .refund-icon {
+        background: url(/img/icons/menu-sprite.png) 0 -375px;
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+
+    footer {
+        margin-bottom: 4rem;
+    }
+
+    .nav-footer {
+        @include fontSize(10px);
+        background-color: $white-color;
+        padding-bottom: 10px;
+
+        li {
+            a {
+                background-color: $white-color;
+                color: $tomato-color;
+                padding-top: 1rem;
+
+            }
+        }
+
+        .footer-icon {
+            display: block;
+            height: 30px;
+            margin: 0 auto;
+            width: 25px;
+        }
+
+        .footer-home-icon {
+            background: url(/img/icons/bottom-menu-sprite.png) 0 0;
+            background-repeat: no-repeat;
+            background-size: initial;
+        }
+
+        .footer-cancel-icon {
+            background: url(/img/icons/bottom-menu-sprite.png) -38px 0;
+            background-repeat: no-repeat;
+            background-size: initial;
+        }
+
+        .footer-lookup-icon {
+            background: url(/img/icons/bottom-menu-sprite.png) -77px 0;
+            background-repeat: no-repeat;
+            background-size: initial;
+        }
+
+        .footer-support-icon {
+            background: url(/img/icons/bottom-menu-sprite.png) -116px 0;
+            background-repeat: no-repeat;
+            background-size: initial;
+        }
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 0.375rem;
+    }
+}
+
+@media screen and (max-width: $extra-sm-mobile-breakpoint) {
+    footer {
+        .row span, .row a {
+            @include fontSize(14px);
+        }
+    }
+}

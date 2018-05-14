@@ -1,0 +1,35 @@
+// Mixins
+
+/*Border Radius*/
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Convert PX to REM - font size property
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
+}
+
+/*Font Size in REM*/
+@mixin fontSize($size) {
+	font-size: $size; //Fallback in px
+	font-size: calculateRem($size);
+}
+
+/*Transition*/
+@mixin transition($property, $duration, $timing_function, $delay) {
+	-webkit-transition: $property $duration $timing-function $delay;
+    -moz-transition: $property $duration $timing-function $delay;
+    -o-transition: $property $duration $timing-function $delay;
+    transition: $property $duration $timing-function $delay;
+}
+
+@mixin boxShadow($horizontal_offset, $vertical_offset, $blur_radius, $optional_spread_radius, $color) {
+    -webkit-box-shadow: $horizontal_offset $vertical_offset $blur_radius $optional_spread_radius $color;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    $horizontal_offset $vertical_offset $blur_radius $optional_spread_radius $color;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         $horizontal_offset $vertical_offset $blur_radius $optional_spread_radius $color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
